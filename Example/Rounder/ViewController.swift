@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Rounder
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let double = 1.32589
+        let rounded = double.round(to: 3)
+        print(rounded)
     }
 
     override func didReceiveMemoryWarning() {
